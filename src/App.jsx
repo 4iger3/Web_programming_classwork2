@@ -22,6 +22,11 @@ import underwaterVideo from "../4023639833-preview.mp4"
 import profileOne from "./assets/profile-1.jpg"
 import profileTwo from "./assets/profile-2.jpg"
 import profileThree from "./assets/profile-3.jpg"
+import aboutPortrait from "./assets/about-portrait.jpg"
+import projectNorth from "./assets/project-north.jpg"
+import projectStill from "./assets/project-still.jpg"
+import projectObjects from "./assets/project-objects.jpg"
+import underwaterPoster from "./assets/underwater-poster.jpg"
 
 const profileUrl = "https://github.com/4iger3"
 
@@ -78,8 +83,7 @@ const projects = [
     type: "Digital flagship",
     description: "A quieter kind of commerce for objects made to last.",
     tags: ["E-commerce", "Art direction"],
-    image:
-      "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1100&q=85",
+    image: projectNorth,
     imageAlt: "Sculptural modern interior with warm natural light",
     className: "project-image-one",
   },
@@ -89,8 +93,7 @@ const projects = [
     type: "Wellness platform",
     description: "A more human way to make room for a little stillness.",
     tags: ["Product design", "Mobile"],
-    image:
-      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1100&q=85",
+    image: projectStill,
     imageAlt: "Minimal architectural shapes against a clear sky",
     className: "project-image-two",
   },
@@ -100,8 +103,7 @@ const projects = [
     type: "Creative studio",
     description: "A digital home for the curious and the collectible.",
     tags: ["Creative development", "Web"],
-    image:
-      "https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1100&q=85",
+    image: projectObjects,
     imageAlt: "Minimal still life with a sculptural object",
     className: "project-image-three",
   },
@@ -433,7 +435,7 @@ function About() {
         </GlassCard>
         <div className="about-photo">
           <img
-            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85"
+            src={aboutPortrait}
             alt="Creative portrait in a sunlit studio"
             loading="lazy"
           />
@@ -457,7 +459,11 @@ function About() {
           for the details that make a product feel unmistakably yours.
         </p>
         <div className="about-bottom">
-          <a className="button button-outline" href="/resume.txt" download="4iger3-resume.txt">
+          <a
+            className="button button-outline"
+            href="data:text/plain;charset=utf-8,4iger3%0ACreative%20Developer%20%26%20Digital%20Designer%0A%0APROFILE%0AIndependent%20creative%20developer%20focused%20on%20thoughtful%20digital%20design%20and%20front-end%20experiences.%0A%0APORTFOLIO%0Ahttps%3A%2F%2Fgithub.com%2F4iger3%0A%0AContact%3A%20hello%404iger3.dev%0A%0AUpdate%20this%20starter%20resume%20with%20your%20experience%20and%20contact%20details."
+            download="4iger3-resume.txt"
+          >
             Download résumé <ArrowDown size={15} />
           </a>
           <span className="about-signature">A little intention goes a long way.</span>
@@ -651,7 +657,7 @@ function App() {
             muted
             loop
             playsInline
-            poster="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1920&q=80"
+            poster={underwaterPoster}
           >
             <source src={underwaterVideo} type="video/mp4" />
           </video>

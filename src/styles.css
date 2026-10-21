@@ -1,6 +1,22 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("./assets/dm-sans-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("./assets/space-grotesk-latin.woff2") format("woff2");
+}
+
 :root {
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
@@ -95,7 +111,7 @@ button {
   z-index: -2;
   overflow: hidden;
   background-color: var(--ink);
-  background-image: url("https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1920&q=80");
+  background-image: url("./assets/underwater-poster.jpg");
   background-position: center;
   background-size: cover;
 }
