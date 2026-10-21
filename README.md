@@ -2,7 +2,7 @@
 
 ## Portfolio preview
 
-The portfolio source is built with React and Vite. The production build bundles the page into a single standalone HTML file at `dist/index.html`, including its scripts, styles, fonts, photos, and background video.
+The portfolio source is built with React and Vite. The production build bundles the page into a single standalone HTML file at `dist/index.html`, including its scripts, styles, fonts, photos, and background video. The build also escapes React's literal `<script>` placeholder because htmlpreview rewrites script tags before running the inline bundle.
 
 Build the preview file with:
 
