@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#20213b" />
-    <meta name="description" content="Meet Mikhail, a web developer building playful, thoughtful digital experiences." />
-    <title>Mikhail — Web Developer</title>
+    <meta name="description" content="Meet Mihails, a web developer building playful, polished digital experiences." />
+    <title>Mihails — Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav shell" aria-label="Main navigation">
-        <a class="logo" href="#home" aria-label="Mikhail home"><span class="logo-mark">M</span> mikhail<span class="logo-dot">.dev</span></a>
+        <a class="logo" href="#home" aria-label="Mihails home"><span class="logo-mark">M</span> mihails<span class="logo-dot">.dev</span></a>
         <details class="menu">
           <summary aria-label="Toggle navigation"><span></span><span></span></summary>
           <div class="menu-links">
@@ -31,8 +31,8 @@
       <section class="hero shell" id="home">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> PLAYER ONE · WEB DEVELOPER</p>
-          <h1>Hi, I’m <span>Mikhail</span>.<br />I make the web<br />feel like <em>play.</em></h1>
-          <p class="hero-text">I create bright, thoughtful websites that turn good ideas into delightful experiences — one detail, one interaction, one level at a time.</p>
+          <h1>Hi, I’m <span>Mihails</span>.<br />I make the web<br />feel like <em>play.</em></h1>
+          <p class="hero-text">I build playful, polished websites that make useful ideas easy to explore — with thoughtful design, clear code, and a little personality.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
             <a class="button button-quiet" href="https://github.com/4iger3" target="_blank" rel="noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a>
@@ -40,23 +40,24 @@
           <p class="hero-motto"><span aria-hidden="true">✳</span> MAKE IT USEFUL. MAKE IT FEEL ALIVE.</p>
         </div>
 
-        <aside class="hero-art" aria-label="A little glimpse into Mikhail's creative world">
+        <aside class="hero-art" aria-label="A glimpse into Mihails' creative workspace">
+          <input class="zoom-toggle" type="checkbox" id="photo-zoom" aria-label="Enlarge the workspace illustration" />
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="pixel-star star-one" aria-hidden="true">✦</div>
           <div class="pixel-star star-two" aria-hidden="true">✳</div>
-          <div class="workspace-card">
-            <div class="card-window-bar"><span></span><span></span><span></span><b>MY HAPPY PLACE</b></div>
-            <img
-              src="src/assets/devops-profile.jpg"
-              alt="Pixel-art illustration of a developer working at a computer"
-              fetchpriority="high"
-            />
-            <div class="workspace-caption"><span>COZY CODING CORNER</span><span class="caption-heart" aria-hidden="true">♥</span></div>
-          </div>
+          <label class="workspace-card" for="photo-zoom" aria-label="Enlarge workspace illustration">
+            <span class="card-window-bar"><span></span><span></span><span></span><b>DEV WORKSPACE</b></span>
+            <img src="src/assets/devops-profile.jpg" alt="Pixel-art illustration of a developer working at a computer" fetchpriority="high" />
+            <span class="workspace-caption"><span>CODE · BUILD · REPEAT</span><span class="caption-heart" aria-hidden="true">♥</span></span>
+          </label>
+          <label class="photo-lightbox" for="photo-zoom" aria-label="Close enlarged image">
+            <img src="src/assets/devops-profile.jpg" alt="Full-size pixel-art illustration of a developer working at a computer" />
+            <span class="lightbox-hint">CLICK ANYWHERE TO CLOSE <b aria-hidden="true">×</b></span>
+          </label>
           <div class="float-chip chip-code"><span aria-hidden="true">&lt;/&gt;</span> HTML + CSS</div>
-          <div class="float-chip chip-status"><span class="status-dot"></span> Crafting something</div>
-          <p class="art-caption">A little pixel-art inspiration for my next big idea.</p>
+          <div class="float-chip chip-status"><span class="status-dot"></span> Building ideas</div>
+          <p class="art-caption">A pixel-art snapshot of the maker at work.</p>
         </aside>
         <a class="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><b aria-hidden="true">↓</b></a>
       </section>
@@ -70,8 +71,8 @@
           <div class="section-kicker"><span>01</span> THE PLAYER</div>
           <h2>A curious mind.<br /><span>A maker at heart.</span></h2>
           <div class="about-copy">
-            <p class="about-lead">I’m Mikhail, a web developer who loves bringing ideas to life on the internet.</p>
-            <p>I care about the little things that make a website feel right: clear layouts, friendly details, smooth responsive design, and experiences that are easy for everyone to use. My mission is to make useful things feel a little more magical.</p>
+            <p class="about-lead">I’m Mihails, a web developer focused on creating clear, memorable experiences for the web.</p>
+            <p>I bring ideas to life with thoughtful layouts, accessible details, responsive design, and clean front-end code. My goal is simple: make digital experiences useful, welcoming, and fun to explore.</p>
             <a class="text-link" href="#contact">Let’s make something great <span aria-hidden="true">↗</span></a>
           </div>
           <div class="about-stats" aria-label="My approach">
@@ -117,7 +118,7 @@
           <div class="project-grid">
             <article class="project-card">
               <div class="project-art art-garden" aria-hidden="true"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i><span>pixel-garden</span></div><div class="garden-scene"><b>✿</b><b>✦</b><b>❋</b><i></i><i></i></div><div class="mock-lines"><i></i><i></i><i></i></div></div><span class="art-label">GROW A LITTLE</span></div>
-              <div class="project-info"><div class="project-topline"><span>WEB EXPERIENCE</span><span>CONCEPT 01</span></div><h3>Pixel Garden</h3><p>A cozy corner of the web for sharing tiny creative projects and daily wins.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Community</span></div></div>
+              <div class="project-info"><div class="project-topline"><span>WEB EXPERIENCE</span><span>CONCEPT 01</span></div><h3>Pixel Garden</h3><p>A playful space for sharing creative projects, collecting inspiration, and celebrating progress.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Community</span></div></div>
             </article>
             <article class="project-card">
               <div class="project-art art-orbit" aria-hidden="true"><div class="orbit-ui"><div class="orbit-title"><span>✳</span> little orbit</div><div class="orbit-task"><b>01</b><i></i><span>Plan your week</span><strong>✓</strong></div><div class="orbit-task"><b>02</b><i></i><span>Make some progress</span><strong>·</strong></div><div class="orbit-task"><b>03</b><i></i><span>Celebrate a win</span><strong>·</strong></div></div><span class="orbit-planet">✦</span></div>
@@ -145,7 +146,7 @@
           <a class="button button-primary contact-button" href="https://github.com/4iger3" target="_blank" rel="noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
           <div class="contact-decoration" aria-hidden="true"><span>✳</span><span>✦</span><span>♡</span></div>
           <footer class="footer">
-            <a class="logo" href="#home"><span class="logo-mark">M</span> mikhail<span class="logo-dot">.dev</span></a>
+            <a class="logo" href="#home"><span class="logo-mark">M</span> mihails<span class="logo-dot">.dev</span></a>
             <p>Made with curiosity &amp; a little bit of CSS magic.</p>
             <a class="footer-github" href="https://github.com/4iger3" target="_blank" rel="noreferrer">github.com/4iger3 <span aria-hidden="true">↗</span></a>
           </footer>

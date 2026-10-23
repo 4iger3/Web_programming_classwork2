@@ -312,16 +312,30 @@ h3 {
   place-items: center;
 }
 
+.zoom-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 .workspace-card {
   position: relative;
   z-index: 1;
+  display: block;
   width: min(100%, 385px);
   padding: 9px;
   border: 2px solid var(--cream);
   background: var(--cream);
   box-shadow: 10px 10px 0 var(--coral), 18px 18px 0 rgba(0, 0, 0, 0.2);
+  cursor: zoom-in;
   transform: rotate(2deg);
   transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.zoom-toggle:focus-visible ~ .workspace-card {
+  outline: 3px solid var(--gold);
+  outline-offset: 5px;
 }
 
 .workspace-card:hover {
@@ -375,6 +389,57 @@ h3 {
   justify-content: space-between;
   color: var(--night);
   font-size: 8px;
+}
+
+.photo-lightbox {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  display: none;
+  padding: 48px 24px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 19, 35, 0.94);
+  cursor: zoom-out;
+}
+
+.zoom-toggle:checked ~ .photo-lightbox {
+  display: flex;
+}
+
+.photo-lightbox img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 96px);
+  object-fit: contain;
+  image-rendering: pixelated;
+  box-shadow: 8px 8px 0 var(--coral);
+}
+
+.lightbox-hint {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cream);
+  font-family: var(--pixel);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.lightbox-hint b {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 19px;
 }
 
 .caption-heart {

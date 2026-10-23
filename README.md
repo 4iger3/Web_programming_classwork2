@@ -1,6 +1,6 @@
-# Mikhail — Web Developer Portfolio
+# Mihails — Web Developer Portfolio
 
-One-page, mobile-friendly portfolio for Mikhail, built with HTML and CSS only.
+One-page, mobile-friendly portfolio for Mihails, built with HTML and CSS only.
 It uses a polished 16–32-bit game-inspired visual style and CSS-drawn project
 concepts. The profile image is a small pixel-art illustration.
 
@@ -18,6 +18,7 @@ by relative paths. Keep those paths intact when moving files.
 ## CSS-only interactions
 
 - The mobile navigation uses a native `<details>` disclosure.
+- The workspace image opens in a full-size CSS lightbox using a native checkbox.
 - Hover states and small animations are CSS-only, with reduced-motion support.
 - All external portfolio links lead to [github.com/4iger3](https://github.com/4iger3).
 
