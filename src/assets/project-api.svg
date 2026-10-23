@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="53" y1="22" x2="887" y2="551" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#342C56"/>
+      <stop offset="1" stop-color="#11151D"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="299" y1="245" x2="713" y2="347" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB800"/>
+      <stop offset="1" stop-color="#AE9BFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="560" rx="28" fill="url(#bg)"/>
+  <circle cx="108" cy="75" r="215" fill="#AE9BFF" fill-opacity=".07"/>
+  <rect x="68" y="56" width="824" height="448" rx="20" fill="#0D1118" stroke="#FFFFFF" stroke-opacity=".16"/>
+  <path d="M68 116h824" stroke="#FFFFFF" stroke-opacity=".12"/>
+  <circle cx="104" cy="85" r="7" fill="#FF6A6A"/>
+  <circle cx="128" cy="85" r="7" fill="#FFB800"/>
+  <circle cx="152" cy="85" r="7" fill="#43D9A0"/>
+  <text x="190" y="92" fill="#E8EEF5" font-family="monospace" font-size="16">service-forge / architecture</text>
+  <rect x="105" y="158" width="194" height="80" rx="14" fill="#1B2030" stroke="#AE9BFF" stroke-opacity=".8"/>
+  <text x="137" y="190" fill="#AE9BFF" font-family="monospace" font-size="15">CLIENT</text>
+  <text x="130" y="216" fill="#C8D2D8" font-family="monospace" font-size="12">HTTPS / JSON</text>
+  <rect x="380" y="158" width="194" height="80" rx="14" fill="#1B2030" stroke="#FFB800" stroke-opacity=".8"/>
+  <text x="408" y="190" fill="#FFB800" font-family="monospace" font-size="15">PYTHON API</text>
+  <text x="409" y="216" fill="#C8D2D8" font-family="monospace" font-size="12">FASTAPI / AUTH</text>
+  <rect x="655" y="158" width="194" height="80" rx="14" fill="#1B2030" stroke="#43D9A0" stroke-opacity=".8"/>
+  <text x="699" y="190" fill="#43D9A0" font-family="monospace" font-size="15">DATABASE</text>
+  <text x="712" y="216" fill="#C8D2D8" font-family="monospace" font-size="12">POSTGRESQL</text>
+  <path d="M299 198h81M574 198h81" stroke="url(#flow)" stroke-width="4" stroke-linecap="round"/>
+  <path d="m367 188 13 10-13 10M642 188l13 10-13 10" stroke="#FFB800" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="105" y="282" width="744" height="176" rx="14" fill="#111820" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="132" y="319" fill="#8F9AA9" font-family="monospace" font-size="13">GET</text>
+  <text x="177" y="319" fill="#43D9A0" font-family="monospace" font-size="13">/api/v1/services/health</text>
+  <text x="720" y="319" fill="#43D9A0" font-family="monospace" font-size="12">200 OK</text>
+  <path d="M132 341h688" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="132" y="375" fill="#AE9BFF" font-family="monospace" font-size="13">{</text>
+  <text x="158" y="402" fill="#C8D2D8" font-family="monospace" font-size="13">"status":</text>
+  <text x="251" y="402" fill="#43D9A0" font-family="monospace" font-size="13">"healthy"</text>
+  <text x="359" y="402" fill="#C8D2D8" font-family="monospace" font-size="13">, "uptime":</text>
+  <text x="479" y="402" fill="#FFB800" font-family="monospace" font-size="13">"99.9%"</text>
+  <text x="132" y="430" fill="#AE9BFF" font-family="monospace" font-size="13">}</text>
+  <rect x="710" y="375" width="105" height="44" rx="22" fill="#43D9A0" fill-opacity=".12" stroke="#43D9A0" stroke-opacity=".45"/>
+  <text x="734" y="403" fill="#43D9A0" font-family="monospace" font-size="12">READY</text>
+</svg>

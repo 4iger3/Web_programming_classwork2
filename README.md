@@ -1,20 +1,23 @@
-# Web programming classwork 2
+# 4iger3 portfolio
 
-## Portfolio preview
+This portfolio uses HTML and CSS only. It has no JavaScript runtime or build step.
 
-The portfolio source is built with React and Vite. The production build bundles the page into a single standalone HTML file at `dist/index.html`, including its scripts, styles, fonts, photos, and background video. The build also escapes React's literal `<script>` placeholder because htmlpreview rewrites script tags before running the inline bundle.
+## Preview with htmlpreview
 
-Build the preview file with:
-
-```bash
-npm install
-npm run build
-```
-
-Commit and push `dist/index.html`, then open it with htmlpreview:
+Push the repository to GitHub, then open:
 
 ```text
-https://htmlpreview.github.io/?https://github.com/4iger3/Web_programming_classwork2/blob/main/dist/index.html
+https://htmlpreview.github.io/?https://github.com/4iger3/Web_programming_classwork2/blob/main/index.html
 ```
 
-Rebuild `dist/index.html` after changing the portfolio source before pushing updates.
+The page stylesheet, photos, fonts, and video are regular repository assets referenced by the HTML/CSS. Keep their relative paths intact when moving files.
+
+## CSS-only interactions
+
+- The portrait cycles through the supplied photos on hover and automatically on touch devices.
+- Expertise items use native `<details>` and `<summary>` controls.
+- The mobile navigation uses a native `<details>` disclosure.
+- Floating badges, project-card hover states, and supported scroll reveals use CSS animations.
+- The native browser cursor remains enabled; a cursor that follows the pointer requires JavaScript.
+
+The muted, looping HTML video plays natively in browsers that allow autoplay. Its poster image remains as the visual fallback.

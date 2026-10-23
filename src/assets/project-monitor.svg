@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="91" y1="0" x2="880" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173C3D"/>
+      <stop offset="1" stop-color="#10151D"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="232" y1="307" x2="770" y2="306" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB800"/>
+      <stop offset="1" stop-color="#33D7A1"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="560" rx="28" fill="url(#bg)"/>
+  <circle cx="832" cy="54" r="220" fill="#42D9A1" fill-opacity=".06"/>
+  <rect x="66" y="55" width="828" height="450" rx="20" fill="#0C1318" stroke="#FFFFFF" stroke-opacity=".15"/>
+  <path d="M66 113h828" stroke="#FFFFFF" stroke-opacity=".12"/>
+  <circle cx="102" cy="84" r="7" fill="#FF6A6A"/>
+  <circle cx="126" cy="84" r="7" fill="#FFB800"/>
+  <circle cx="150" cy="84" r="7" fill="#43D9A0"/>
+  <text x="188" y="91" fill="#E8EEF5" font-family="monospace" font-size="16">node-watch / production</text>
+  <circle cx="816" cy="84" r="5" fill="#43D9A0"/>
+  <text x="830" y="90" fill="#43D9A0" font-family="monospace" font-size="12">LIVE</text>
+  <rect x="98" y="137" width="237" height="89" rx="13" fill="#152126" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="120" y="167" fill="#8B9AA3" font-family="monospace" font-size="12">CPU LOAD</text>
+  <text x="120" y="207" fill="#FFFFFF" font-family="monospace" font-size="31">24.8%</text>
+  <path d="m257 193 11-11 10 7 12-21 10 12 15-17" stroke="#43D9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="361" y="137" width="237" height="89" rx="13" fill="#152126" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="383" y="167" fill="#8B9AA3" font-family="monospace" font-size="12">MEMORY</text>
+  <text x="383" y="207" fill="#FFFFFF" font-family="monospace" font-size="31">61.2%</text>
+  <path d="m520 191 13 1 10-16 12 9 13-21 10 9 14-8" stroke="#FFB800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="624" y="137" width="237" height="89" rx="13" fill="#152126" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="646" y="167" fill="#8B9AA3" font-family="monospace" font-size="12">SERVICES UP</text>
+  <text x="646" y="207" fill="#FFFFFF" font-family="monospace" font-size="31">12 / 12</text>
+  <circle cx="824" cy="194" r="14" fill="#43D9A0" fill-opacity=".16"/>
+  <path d="m817 194 5 5 10-11" stroke="#43D9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="98" y="250" width="480" height="218" rx="13" fill="#111B20" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="122" y="282" fill="#E8EEF5" font-family="monospace" font-size="13">SYSTEM LOAD · 24 HOURS</text>
+  <path d="M124 319h427M124 354h427M124 389h427M124 424h427" stroke="#FFFFFF" stroke-opacity=".07"/>
+  <path d="M124 409 151 394l25 8 23-33 24 15 28-39 23 15 27-5 22-31 25 20 25-10 23 12 27-24 25 12 25-18 27 10 22-14 28 7" stroke="url(#chart)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="604" y="250" width="257" height="218" rx="13" fill="#111B20" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="628" y="282" fill="#E8EEF5" font-family="monospace" font-size="13">SERVICE STATUS</text>
+  <circle cx="635" cy="320" r="5" fill="#43D9A0"/>
+  <text x="651" y="325" fill="#C8D2D8" font-family="monospace" font-size="12">api-gateway</text>
+  <text x="818" y="325" fill="#43D9A0" font-family="monospace" font-size="11">OK</text>
+  <circle cx="635" cy="358" r="5" fill="#43D9A0"/>
+  <text x="651" y="363" fill="#C8D2D8" font-family="monospace" font-size="12">worker-queue</text>
+  <text x="818" y="363" fill="#43D9A0" font-family="monospace" font-size="11">OK</text>
+  <circle cx="635" cy="396" r="5" fill="#43D9A0"/>
+  <text x="651" y="401" fill="#C8D2D8" font-family="monospace" font-size="12">postgres-db</text>
+  <text x="818" y="401" fill="#43D9A0" font-family="monospace" font-size="11">OK</text>
+  <circle cx="635" cy="434" r="5" fill="#43D9A0"/>
+  <text x="651" y="439" fill="#C8D2D8" font-family="monospace" font-size="12">cache-node</text>
+  <text x="818" y="439" fill="#43D9A0" font-family="monospace" font-size="11">OK</text>
+</svg>
